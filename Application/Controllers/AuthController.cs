@@ -29,6 +29,11 @@ namespace Application.Controllers
             return response;
         }
 
+        /// <summary>
+        /// Вход
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns>JWT - token</returns>
         [HttpPost("login")]
         public async Task<ActionResult<string>> Login(LoginCommand request)
         {
